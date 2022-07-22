@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>JsB4</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-color: pink">
+  <!-- bài 5 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">
+           Bài 5: Tìm ngày tháng năm
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <input type="number" id="ngay" class="form-control" placeholder="Nhập Ngày" />
+              <input type="number" id="thang" class="form-control my-4" placeholder="Nhập Tháng" />
+              <input type="number" id="nam" class="form-control" placeholder="Nhập Năm" />
+            </div>
+            <button class="btn btn-success" id="nutHomqua">Ngày hôm qua</button>
+            <button class="btn btn-success" onclick="nutmai()">Ngày mai</button>
+          </div>
+          <div class="card-footer text-muted " id="showResult">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <!-- Bai 6 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">
+           Bài 6: Tính số ngày trong tháng
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <input type="number" id="month" class="form-control my-4" placeholder="Nhập Tháng" />
+              <input type="number" id="year" class="form-control" placeholder="Nhập Năm" />
+            </div>
+            <button class="btn btn-success" id="nhap">Tính</button>
+          </div>
+          <div class="card-footer text-muted " id="showResultb6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <!-- bài 7 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">
+           Bài 7: Đọc Số
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <input type="number" id="number" class="form-control" placeholder="Nhập Số" />
+            </div>
+            <button class="btn btn-success" id="nut">Đọc</button>
+          </div>
+          <div class="card-footer text-muted " id="showResultb7">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <!-- bai 8 -->
+  <div class="container">
+    <div class="card">
+        <div class="card-header">
+          Bài 8 Đo khoản cách
+        </div>
+        <div class="card-body">
+            <div class="content">
+                <h3>Sinh Viên 1</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="tenSv1" placeholder="Nhập Tên">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoX1" placeholder="Nhập tọa độ X">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoY1" placeholder="Nhập tọa độ Y">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Sinh Viên 2</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="tenSv2" placeholder="Nhập Tên">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoX2" placeholder="Nhập tọa độ X">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoY2" placeholder="Nhập tọa độ Y">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Sinh Viên 3</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="tenSv3" placeholder="Nhập Tên">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoX3" placeholder="Nhập tọa độ X">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoY3" placeholder="Nhập tọa độ Y">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Trường học</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoX4" placeholder="Nhập tọa độ X">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="toadoY4" placeholder="Nhập tọa độ Y">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary my-4" id="sosanh">So sánh</button>
+        </div>
+        <div class="card-footer text-muted" id="showResultb8">
+        </div>
+    </div>
+</div>
+
+  <script src="./index.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
